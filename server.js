@@ -21,7 +21,7 @@ app.post("/create-item", (req, res) => {
   // TODO: code with db here
 });
 
-app.get("/", function () {
+app.get("/", function (req, res) {
   res.render("harid");
 });
 

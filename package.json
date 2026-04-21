@@ -15,6 +15,9 @@
   "dependencies": {
     "ejs": "^5.0.2",
     "express": "^5.2.1",
-    "nodemon": "^3.1.14"
+    "global": "^4.4.0",
+    "kill": "^0.0.2",
+    "nodemon": "^3.1.14",
+    "port": "^0.8.1"
   }
 }
