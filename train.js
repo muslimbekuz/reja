@@ -1,4 +1,15 @@
-/* MIT TASK */
+/* MIT B-TASK */
+
+function countDigits(data) {
+  let count = 0;
+  for (let a of data) {
+    if ("0123456789".includes(a)) count++;
+  }
+  return count;
+}
+console.log(countDigits("t0ny1m3m2t41"));
+
+/* MIT A-TASK 
 
 function countLetter(harf, soz) {
   let count = 0;
@@ -9,6 +20,8 @@ function countLetter(harf, soz) {
 }
 const result = countLetter("o", "cristiano ronaldo");
 console.log(result);
+
+*/
 
 // console.log("Jack Ma maslahatlari");
 
