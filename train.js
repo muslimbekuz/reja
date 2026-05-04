@@ -1,4 +1,58 @@
-/* MIT B-TASK */
+/* MIT D-TASK*/
+
+function checkContent(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
+}
+
+console.log(checkContent("mitgroup", "gmtiprou"));
+
+/* TASK - C
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  getTime() {
+    const now = new Date();
+    const hour = String(now.getHours()).padStart(2, "0");
+    const minute = String(now.getMinutes()).padStart(2, "0");
+    return `${hour}:${minute}`;
+  }
+
+  qoldiq() {
+    console.log(
+      `Hozir ${this.getTime()}da ${this.non}ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola mavjud!`
+    );
+  }
+
+  sotish(mahsulot, soni) {
+    if (this[mahsulot] >= soni) {
+      this[mahsulot] -= soni;
+      console.log(`${this.getTime()}da ${soni}ta ${mahsulot} sotildi.`);
+    } else {
+      console.log(`${mahsulot} yetarli emas!`);
+    }
+  }
+
+  qabul(mahsulot, soni) {
+    this[mahsulot] += soni;
+    console.log(`${this.getTime()}da ${soni}ta ${mahsulot} qabul qilindi.`);
+  }
+}
+
+const shop = new Shop(4, 5, 2);
+
+shop.qoldiq();
+shop.sotish("non", 3);
+shop.qabul("cola", 4);
+shop.qoldiq();
+
+*/
+
+/* MIT B-TASK 
 
 function countDigits(data) {
   let count = 0;
@@ -8,6 +62,8 @@ function countDigits(data) {
   return count;
 }
 console.log(countDigits("t0ny1m3m2t41"));
+
+*/
 
 /* MIT A-TASK 
 
