@@ -1,4 +1,12 @@
-/* MIT D-TASK*/
+/* MIT E-TASK*/
+
+function getReverse(data) {
+  return data.split("").reverse().join("");
+}
+
+console.log(getReverse("hello"));
+
+/* MIT D-TASK
 
 function checkContent(a, b) {
   return a.split("").sort().join("") === b.split("").sort().join("");
@@ -6,7 +14,9 @@ function checkContent(a, b) {
 
 console.log(checkContent("mitgroup", "gmtiprou"));
 
-/* TASK - C
+*/
+
+/* MIT C-TASK
 
 class Shop {
   constructor(non, lagmon, cola) {
