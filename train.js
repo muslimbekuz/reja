@@ -1,4 +1,20 @@
-/* MIT E-TASK
+/* MIT F-TASK*/
+function findDoublers(soz) {
+  let seen = new Set();
+
+  for (let harf of soz) {
+    if (seen.has(harf)) {
+      return true;
+    }
+    seen.add(harf);
+  }
+
+  return false;
+}
+
+console.log(findDoublers("hello"));
+
+/* MIT E-TASK1
 
 function getReverse(data) {
   return data.split("").reverse().join("");
