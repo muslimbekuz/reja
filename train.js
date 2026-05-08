@@ -1,10 +1,11 @@
-/* MIT E-TASK*/
+/* MIT E-TASK
 
 function getReverse(data) {
   return data.split("").reverse().join("");
 }
 
 console.log(getReverse("hello"));
+*/
 
 /* MIT D-TASK
 
