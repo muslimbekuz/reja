@@ -1,4 +1,19 @@
-/* MIT F-TASK*/
+/* MIT G-TASK */
+function getHighestIndex(numbers) {
+  temp = numbers[0];
+  highest_index = 0;
+  for (let i in numbers) {
+    if (numbers[i] > temp) {
+      highest_index = i;
+      temp = numbers[i];
+    }
+  }
+  return highest_index;
+}
+
+console.log(getHighestIndex([27, 3, 14, 66, 9, 81, 34, 59]));
+
+/* MIT F-TASK
 function findDoublers(soz) {
   let seen = new Set();
 
@@ -12,7 +27,7 @@ function findDoublers(soz) {
   return false;
 }
 
-console.log(findDoublers("hello"));
+console.log(findDoublers("hello")); */
 
 /* MIT E-TASK1
 
