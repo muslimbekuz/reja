@@ -1,4 +1,15 @@
-/* MIT G-TASK */
+/* MIT H-TASK */
+function getPositive(data) {
+  arr = [];
+  for (let n of data) {
+    if (n >= 0) arr.push(n);
+  }
+  return arr.join("");
+}
+
+console.log(getPositive([7, -1, 9]));
+
+/* MIT G-TASK 
 function getHighestIndex(numbers) {
   temp = numbers[0];
   highest_index = 0;
@@ -12,6 +23,8 @@ function getHighestIndex(numbers) {
 }
 
 console.log(getHighestIndex([27, 3, 14, 66, 9, 81, 34, 59]));
+
+*/
 
 /* MIT F-TASK
 function findDoublers(soz) {
