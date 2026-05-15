@@ -1,4 +1,24 @@
-/* MIT H-TASK */
+/* MIT I-TASK */
+
+function majorityElement(arr) {
+  const count = {};
+  let maxCount = 0;
+  let result = arr[0];
+
+  for (const num of arr) {
+    count[num] = (count[num] || 0) + 1;
+    if (count[num] > maxCount) {
+      maxCount = count[num];
+      result = num;
+    }
+  }
+
+  return result;
+}
+
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+/* MIT H-TASK 
 function getPositive(data) {
   arr = [];
   for (let n of data) {
@@ -8,6 +28,7 @@ function getPositive(data) {
 }
 
 console.log(getPositive([7, -1, 9]));
+*/
 
 /* MIT G-TASK 
 function getHighestIndex(numbers) {
